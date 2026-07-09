@@ -5,6 +5,7 @@ using namespace std;
 // T.C: O(n), S.C: O(1)
 bool palindromeHelper(int i, int j, string s)
 {
+    cout<<i<<j<<s<<endl; // check purpose
     while (i < j)
     {
         if (s[i] != s[j])
@@ -23,6 +24,12 @@ bool palindromeHelper(int i, int j, string s)
 bool validPalindromeTwoPointer(string s)
 {
     int i = 0, j = s.size() - 1;
+
+
+    // eg:- "a b c a"
+    //           i
+    //           j
+
 
     while (i < j)
     {

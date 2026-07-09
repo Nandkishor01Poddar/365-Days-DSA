@@ -13,6 +13,12 @@ vector<int> sortedSquaresTwoPointer(vector<int> &nums)
 
     int i = 0, j = nums.size() - 1, k = nums.size() - 1;
 
+    // eg :- [-7, -3, 2, 3, 11]
+    //                i
+    //.               j
+    //        k
+    // res = [4, 9, 9, 49, 121]
+
     while (i <= j)
     {
         if (abs(nums[i]) > abs(nums[j]))

@@ -10,6 +10,12 @@ bool isPalindromeMethod1(string s) {
     int st = 0;
     int end = s.size() - 1;
 
+
+    // Eg :- rac a car
+    //           i
+    //.          j
+
+
     while (st < end) {
 
         // Skip non-alphanumeric characters from the left
